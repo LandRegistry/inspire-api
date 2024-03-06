@@ -1,0 +1,11 @@
+Flask==2.3.3
+Flask-LogConfig==0.4.2
+Flask-Script==2.0.6
+requests==2.31.0
+Flask-SQLAlchemy==3.0.5
+SQLAlchemy==1.4.35
+GeoAlchemy2==0.14.1
+psycopg2==2.9.7
+git+http://internal-git-host/llc-beta/jwt-validation.git@v1.2.3
+gunicorn==21.2.0
+werkzeug==2.3.7

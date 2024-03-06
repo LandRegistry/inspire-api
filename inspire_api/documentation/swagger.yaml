@@ -1,0 +1,58 @@
+swagger: '2.0'
+info:
+  version: 0.0.1
+  title: Inspire API
+paths:
+  /local-land-charge-id/{inspire_id}:
+    get:
+      summary: Get local land charge ID by inspire ID
+      description: Get local land charge ID by inspire ID
+      parameters:
+      - name: inspire_id
+        in: path
+        type: string
+        required: true
+        description: Inspire ID to search on
+        example: 40001
+      responses:
+        200:
+          description: Search successful
+          schema:
+            type: object
+            properties:
+              llc_id:
+                type: string
+                example: LLC-123B
+        400:
+          description: Request not acceptable
+          schema:
+            type: object
+            properties:
+              error_message:
+                type: string
+                example: Inspire ID must be an integer
+              error_code:
+                type: number
+                example: 400
+        404:
+          description: No results found
+          schema:
+            type: object
+            properties:
+              error_message:
+                type: string
+                example: No land charge ID found for inspire ID 40004
+              error_code:
+                type: number
+                example: 404
+        500:
+          description: Server error
+          schema:
+            type: object
+            properties:
+              error_message:
+                type: string
+                example: Something went wrong
+              error_code:
+                type: number
+                example: 500

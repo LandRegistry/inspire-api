@@ -1,0 +1,19 @@
+# Environment variable dummy values for testing purposes
+export APP_NAME="inspire-api"
+export SQL_HOST="postgres-13"
+export LOG_LEVEL="DEBUG"
+export COMMIT="LOCAL"
+export SQL_DATABASE="llc_inspire"
+export SQL_PASSWORD="inspirepassword"
+export APP_SQL_USERNAME="inspireuser"
+export AUTHENTICATION_API_URL="http://authentication-api:8080/v2.0"
+export AUTHENTICATION_API_ROOT="http://authentication-api:8080"
+export ALEMBIC_SQL_USERNAME="root"
+export SQL_USE_ALEMBIC_USER="false"
+export SQLALCHEMY_POOL_RECYCLE="3300"
+export MAX_HEALTH_CASCADE=6
+export APP_MODULE='inspire_api.main:app'
+export FLASK_APP='inspire_api.main'
+export GUNICORN_ARGS='--reload'
+export WEB_CONCURRENCY='2'
+export PYTHONPATH=/src
